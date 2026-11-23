@@ -1,13 +1,11 @@
-# Kamal Naagar SEO — GitHub Pages Website
+# Kamal Naagar SEO — GitHub Pages site
 
-Responsive static website for white-label SEO agency support.
+Upload **all files directly to the root** of the `kamalnaagarseo.github.io` repository, replacing matching old files. Do not upload the ZIP itself.
 
-## Deploy
+This project uses a flat file structure without folders. The website includes responsive Home, Services, About, Testimonials, Resources, and Contact pages.
 
-Upload **all files directly to the root** of the `kamalnaagarseo.github.io` repository. Do not upload a folder or the ZIP file itself.
+The contact form opens an email client; it does not send email from a backend.
 
-In GitHub Settings > Pages, select Deploy from a branch, `main`, `/ (root)` if not already configured.
+`kamal.jpg` and `vijay.jpg` are supplied photographs. Other images are AI-generated illustrations and do not claim actual office scenes, customer projects, or measured results.
 
-Home: `index.html`. CSS: `styles.css`. JS: `site.js`. Portrait/favicon: `kamal-naagar.jpg`.
-
-All testimonial videos are embedded from provided YouTube IDs. Verify content and permissions before public publication. Confirm copy reflects your actual service scope.
+Please verify the published website and links after deployment.
