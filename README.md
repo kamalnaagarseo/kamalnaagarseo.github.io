@@ -1,16 +1,13 @@
-## Hi there 👋
+# Kamal Naagar SEO — GitHub Pages Website
 
-<!--
-**kamalnaagarseo/kamalnaagarseo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Responsive static website for white-label SEO agency support.
 
-Here are some ideas to get you started:
+## Deploy
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Upload **all files directly to the root** of the `kamalnaagarseo.github.io` repository. Do not upload a folder or the ZIP file itself.
+
+In GitHub Settings > Pages, select Deploy from a branch, `main`, `/ (root)` if not already configured.
+
+Home: `index.html`. CSS: `styles.css`. JS: `site.js`. Portrait/favicon: `kamal-naagar.jpg`.
+
+All testimonial videos are embedded from provided YouTube IDs. Verify content and permissions before public publication. Confirm copy reflects your actual service scope.

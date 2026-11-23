@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kamalnaagarseo.github.io/sitemap.xml
