@@ -1,26 +1,21 @@
-# Kamal Naagar SEO - Sitewide JSON-LD Deployment
+KAMAL NAAGAR SEO | Five Blog Articles + Sitewide Schema
 
-This is the complete GitHub Pages website, not just the Blog page.
+FULL WEBSITE ZIP - FLAT FILES ONLY
 
-## Publishing
-1. Extract this ZIP. All files are directly at the root; there are no folders.
-2. In github.com/kamalnaagarseo/kamalnaagarseo.github.io, upload ALL extracted files to the repository root, replacing matching files.
-3. Commit changes and wait for GitHub Pages to deploy.
-4. Check `https://kamalnaagarseo.github.io/` and `https://kamalnaagarseo.github.io/services.html` using browser View Page Source and search for `application/ld+json`.
-5. Validate each live page with https://validator.schema.org/ .
+Articles in this package (five total):
+1. seo-agency-workload-management.html (existing first article retained)
+2. white-label-seo-backend-support.html
+3. outsource-seo-quality-control.html
+4. white-label-local-seo-for-agencies.html
+5. google-business-profile-agency-checklist.html
 
-## Embedded schema
-- index.html: Organization, Person (Kamal), Person (Vijay), WebSite, WebPage
-- services.html: Service, OfferCatalog, WebPage, BreadcrumbList
-- about.html: Organization, Person, AboutPage, BreadcrumbList
-- contact.html: ContactPage, BreadcrumbList
-- blog.html: Blog, CollectionPage, BreadcrumbList
-- seo-agency-workload-management.html: BlogPosting, WebPage, BreadcrumbList
-- testimonials.html: WebPage, BreadcrumbList
-- resources.html: CollectionPage, BreadcrumbList
-- resource-gbp.html, resource-workflow.html: Article, WebPage, BreadcrumbList
+Upload ALL extracted files directly to GitHub repository root.
+Do not upload the ZIP itself or place files in a folder.
 
-The schema lives in the <head> of every HTML page. No additional script file or plugin is required.
-The `Work With Me` CTA links to office.kamalnaagar@gmail.com.
-
-Structured data does not guarantee search appearance or rankings.
+Blog listing: blog.html
+Homepage listing: index.html
+Sitemap: sitemap.xml
+New article illustrations: four .webp images. These are illustrative, not client results.
+Existing page-specific JSON-LD remains. New articles have page-specific BlogPosting/WebPage/BreadcrumbList JSON-LD. Publication dates intentionally omitted until actually published.
+All Work With Me email links use office.kamalnaagar@gmail.com.
+Do not mark articles as published until GitHub deployment is verified.
