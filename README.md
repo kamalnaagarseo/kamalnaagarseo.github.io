@@ -11,3 +11,6 @@ The contact form opens an email client; it does not send email from a backend.
 Please verify the published website and links after deployment.
 
 Blog hub: blog.html (has 2 existing guides; 3 clearly marked upcoming topics). Navigation and homepage updated.
+
+First full blog article: seo-agency-workload-management.html
+Featured image: seo-agency-workload-management.webp
