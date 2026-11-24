@@ -1,0 +1,25 @@
+/* Recording test page. Scope all styles to vr classes. */
+.vr-hero{background:radial-gradient(circle at 80% 20%,#173c5e,transparent 45%),linear-gradient(140deg,#061426,#0a213a)}
+.vr-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:76px}
+.vr-hero h1 span{color:var(--orange)}.vr-hero .intro{margin:22px 0 24px;max-width:600px}
+.vr-notice{display:flex;flex-direction:column;gap:5px;border:1px solid #6c5939;border-left:4px solid #ff913d;background:#36291d66;color:#eaf2fb;padding:16px 19px;border-radius:12px;margin:25px 0 26px;max-width:600px}
+.vr-notice span{color:#d4e1ee;font-size:13px}.vr-steps{padding:32px;border:1px solid #2d4d6e;border-radius:22px;background:#112d48}
+.vr-eyebrow{font-size:11px;color:#ff913d;font-weight:800;letter-spacing:.14em;margin-bottom:20px}
+.vr-steps>div{display:flex;gap:17px;padding:17px 0;border-top:1px solid #34516f}
+.vr-steps>div>b{font-size:21px;color:#ff913d}.vr-steps>div>span{display:grid;gap:3px}.vr-steps strong{color:#eef5ff}.vr-steps small{color:#b2c7dc;font-size:13px;line-height:1.55}
+.vr-section{background:#07182c}.vr-section-head{margin-bottom:35px;max-width:760px}.vr-section-head p{margin-top:16px}.vr-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:22px;align-items:start}
+.vr-camera-panel,.vr-details{min-width:0;padding:25px;border:1px solid #335474;border-radius:20px;background:linear-gradient(150deg,#112f4e,#0e243c)}
+.vr-screen{position:relative;aspect-ratio:16/10;background:radial-gradient(circle at center,#183852,#081629 80%);border:1px solid #46617d;border-radius:16px;overflow:hidden;display:grid;place-items:center}
+.vr-screen video{width:100%;height:100%;object-fit:contain;background:#060f1b}.vr-screen video[hidden]{display:none}
+.vr-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;gap:11px}.vr-placeholder strong{font-size:17px;color:#f4f8fe}.vr-placeholder small{max-width:310px;color:#a5bad0;line-height:1.6}
+.vr-camera-icon{display:grid;place-items:center;width:72px;height:72px;border-radius:20px;color:#ff913d;background:#ff913d22;font-size:43px}
+.vr-time{position:absolute;top:15px;right:15px;border-radius:10px;background:#081424e8;padding:7px 12px;font-size:12px;color:#fff;font-variant-numeric:tabular-nums}
+.vr-time[hidden]{display:none}.vr-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:21px}.vr-actions button{min-width:135px}.vr-actions button[hidden]{display:none}
+.vr-actions button:disabled,.vr-submit button:disabled{opacity:.48;cursor:not-allowed;transform:none;box-shadow:none}.vr-status{margin-top:18px;color:#e5eef7;font-size:14px}.vr-subnote{font-size:12px;margin-top:7px}
+.vr-details h3{font-size:24px;margin-bottom:10px}.vr-details>p{font-size:13px;line-height:1.7;margin-bottom:17px}.vr-details form{display:grid;gap:9px}
+.vr-details form>label:not(.vr-check){color:#e8f2fc;font-weight:750;font-size:12px;margin-top:9px}.vr-details form label span{color:#ffb469}
+.vr-details input:not([type=checkbox]),.vr-details select{width:100%;border-radius:10px;border:1px solid #41617e;background:#091e33;color:#f1f7ff;min-height:45px;padding:10px 13px}
+.vr-details input::placeholder{color:#829ab0}.vr-check{display:flex;align-items:flex-start;gap:12px;color:#c6d6e5;font-size:12px;line-height:1.65;margin:15px 0 4px}.vr-check input{accent-color:#ff913d;margin-top:4px;flex:none}.vr-check span{color:#c6d6e5!important}.vr-submit{display:grid;gap:9px;margin-top:15px}.vr-submit small{color:#abc1d6;font-size:12px}
+.vr-bottom{margin-top:30px;border:1px solid #365573;border-radius:17px;padding:24px 27px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}.vr-bottom h3{flex-basis:100%}.vr-bottom p{max-width:520px}
+@media(max-width:900px){.vr-hero-grid,.vr-layout{grid-template-columns:1fr;gap:30px}.vr-hero{padding:65px 0}.vr-steps{padding:23px}}
+@media(max-width:620px){.vr-hero{padding:45px 0}.vr-camera-panel,.vr-details{padding:15px}.vr-actions{display:grid;grid-template-columns:1fr 1fr}.vr-actions button{min-width:0;padding:13px 7px;white-space:normal}.vr-bottom{padding:20px}.vr-bottom .btn{width:100%}.vr-screen{aspect-ratio:4/5}.vr-section{padding:60px 0}}
