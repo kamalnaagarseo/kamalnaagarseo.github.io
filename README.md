@@ -9,3 +9,5 @@ The contact form opens an email client; it does not send email from a backend.
 `kamal.jpg` and `vijay.jpg` are supplied photographs. Other images are AI-generated illustrations and do not claim actual office scenes, customer projects, or measured results.
 
 Please verify the published website and links after deployment.
+
+Blog hub: blog.html (has 2 existing guides; 3 clearly marked upcoming topics). Navigation and homepage updated.
