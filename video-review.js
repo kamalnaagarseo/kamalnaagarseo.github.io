@@ -63,3 +63,114 @@
   again.addEventListener('click',()=>{again.hidden=true;open.disabled=false;openCamera();});
   window.addEventListener('pagehide',()=>{clearTimers();if(recorder?.state==='recording')recorder.stop();endTracks();dropPlayback();});
 })();
+/*
+ * Kamal Naagar SEO
+ * Turnstile + D1 Reservation Test
+ * No video upload in this stage.
+ */
+
+(() => {
+  "use strict";
+
+  const API =
+    "https://kamal-seo-video-testimonials.kamalnaagar2020.workers.dev";
+
+  const button = document.getElementById(
+    "vr-test-reservation"
+  );
+
+  const result = document.getElementById(
+    "vr-test-result"
+  );
+
+  const emailInput = document.getElementById(
+    "vr-email"
+  );
+
+  if (!button || !result || !emailInput) return;
+
+  let busy = false;
+
+  function show(message) {
+    result.textContent = message;
+  }
+
+  button.addEventListener("click", async () => {
+    if (busy) return;
+
+    const email = emailInput.value.trim();
+
+    if (!email || !emailInput.checkValidity()) {
+      show("Please enter a valid email address.");
+      emailInput.focus();
+      return;
+    }
+
+    if (!window.turnstile) {
+      show("Security check is still loading. Please try again.");
+      return;
+    }
+
+    const widget = document.querySelector(
+      "#vr-security-test .cf-turnstile"
+    );
+
+    const token = window.turnstile.getResponse(widget);
+
+    if (!token) {
+      show("Please complete the security verification first.");
+      return;
+    }
+
+    busy = true;
+    button.disabled = true;
+
+    show("Verifying and creating test reservation...");
+
+    try {
+      const response = await fetch(
+        API + "/preflight",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            email: email,
+            token: token
+          })
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        show(
+          "Test successful! Reservation created. " +
+          "Status: " + data.status +
+          ". No video has been uploaded."
+        );
+      } else {
+        show(
+          "Test failed: " +
+          (data.message || "Unknown error")
+        );
+      }
+
+    } catch (error) {
+      show(
+        "Connection failed. Please check your internet connection."
+      );
+    } finally {
+      busy = false;
+      button.disabled = false;
+
+      try {
+        window.turnstile.reset(widget);
+      } catch (error) {
+        // Widget may not be available.
+      }
+    }
+  });
+})();
+
